@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: #303952;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="1003.0" fitWidth="1928.0" opacity="0.73" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/Handymand_background_with_black_and_white_doodles.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="349.0" layoutY="205.0" prefHeight="758.0" prefWidth="1156.0" style="-fx-background-color: #2c2c54;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="436.0" layoutY="155.0" text="LOG IN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="71.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="339.0" layoutY="307.0" onKeyReleased="#keyReleased" prefHeight="63.0" prefWidth="475.0" promptText="User Name" unFocusColor="#221f1f">
+               <font>
+                  <Font name="Arial Bold" size="33.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pwdPassword" labelFloat="true" layoutX="336.0" layoutY="420.0" onKeyReleased="#keyReleased" prefHeight="60.0" prefWidth="483.0" promptText="Password">
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+               <font>
+                  <Font name="Arial Bold" size="33.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView fitHeight="113.0" fitWidth="119.0" layoutX="498.0" layoutY="20.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/images/login.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="cbShowPassword" layoutX="341.0" layoutY="527.0" mnemonicParsing="false" text="Show Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </CheckBox>
+            <JFXTextField fx:id="txtPassword" layoutX="335.0" layoutY="420.0" prefHeight="60.0" prefWidth="483.0">
+               <font>
+                  <Font name="Arial Bold" size="33.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+               </effect>
+            </JFXTextField>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="468.0" layoutY="594.0" onAction="#btnLoginOnAction" prefHeight="46.0" prefWidth="239.0" ripplerFill="#dacfcf" style="-fx-background-color: white;" text="LOGIN" textAlignment="CENTER" textFill="#2c0606">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children></AnchorPane>
+      <Label layoutX="-7.0" layoutY="-8.0" lineSpacing="10.0" prefHeight="151.0" prefWidth="1937.0" style="-fx-background-color: #273c75;">
+         <font>
+            <Font name="Gloucester MT Extra Condensed" size="96.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.2621359223300971" startX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#ff1c85" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="672.0" layoutY="8.0" text="Jinasiri Hardware" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="115.0" fitWidth="139.0" layoutX="82.0" layoutY="10.0" opacity="0.53" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/creative-jh-logo-icon-design-simple-clean-crisp-vector-format-170804624.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

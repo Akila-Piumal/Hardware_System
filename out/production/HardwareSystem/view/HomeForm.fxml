@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1921.0" styleClass="mainPane" stylesheets="@../assets/styles/HomeForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="1683.0" layoutY="697.0" onAction="#btnLogOutOnAction" style="-fx-background-color: #273c75;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <AnchorPane layoutX="46.0" layoutY="62.0" prefHeight="669.0" prefWidth="877.0" styleClass="secondPane">
+         <children>
+            <Label layoutX="56.0" layoutY="57.0" styleClass="textField" stylesheets="@../assets/styles/HomeForm.css" text="Latest Orders" textFill="#2c2c54">
+               <font>
+                  <Font name="Bell MT Bold" size="67.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblOrders" layoutX="64.0" layoutY="196.0" prefHeight="422.0" prefWidth="739.0">
+               <columns>
+                  <TableColumn prefWidth="126.0" text="Order Id" />
+                  <TableColumn prefWidth="165.0" text="Date" />
+                  <TableColumn prefWidth="155.0" text="Time" />
+                  <TableColumn prefWidth="159.0" text="Customer Id" />
+                  <TableColumn prefWidth="132.0" text="Cost" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1050.0" layoutY="63.0" prefHeight="260.0" prefWidth="322.0" styleClass="thirdPane">
+         <children>
+            <Label layoutX="16.0" layoutY="40.0" text="Today Orders" textFill="#2c2c54">
+               <font>
+                  <Font name="Bell MT Bold" size="47.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodayOrders" alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="103.0" prefHeight="132.0" prefWidth="202.0" textFill="#2c2c54">
+               <font>
+                  <Font name="Bell MT Bold" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1259.0" layoutY="405.0" prefHeight="260.0" prefWidth="322.0" styleClass="fourthPane">
+         <children>
+            <Label layoutX="35.0" layoutY="48.0" text="Today Income" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="41.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodayIncome" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="97.0" prefHeight="132.0" prefWidth="288.0" text="10000.00" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="65.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1513.0" layoutY="63.0" prefHeight="260.0" prefWidth="322.0" styleClass="thirdPane">
+         <children>
+            <Label layoutX="29.0" layoutY="40.0" text="Today Rents" textFill="#2c2c54">
+               <font>
+                  <Font name="Bell MT Bold" size="47.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodayRents" alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="97.0" prefHeight="132.0" prefWidth="202.0" textFill="#2c2c54">
+               <font>
+                  <Font name="Bell MT Bold" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

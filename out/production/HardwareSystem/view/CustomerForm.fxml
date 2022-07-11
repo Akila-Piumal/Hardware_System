@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPaine" fx:id="dashBoardContext" prefHeight="864.0" prefWidth="1921.0" style="-fx-background-color: #dfe6e9;" stylesheets="@../assets/styles/CustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="42.0" onAction="#btnHomeOnAction" style="-fx-background-color: FF5C00;" stylesheets="@../assets/styles/CustomerForm.css" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="134.0" layoutY="42.0" prefHeight="37.0" prefWidth="95.0" style="-fx-background-color: FF5C00;" text="Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="110.0" layoutY="45.0" prefHeight="31.0" prefWidth="15.0" text="&gt;">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="518.0" layoutY="112.0" prefHeight="665.0" prefWidth="1349.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <TableView fx:id="tblCustomer" layoutX="64.0" layoutY="69.0" prefHeight="528.0" prefWidth="1222.0">
+              <columns>
+                <TableColumn prefWidth="137.0" text="Id" />
+                <TableColumn minWidth="8.0" prefWidth="292.0" text="Name" />
+                  <TableColumn minWidth="0.0" prefWidth="347.0" text="Address" />
+                  <TableColumn prefWidth="220.0" text="Contact" />
+                  <TableColumn prefWidth="224.0" text="Option" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="47.0" layoutY="112.0" prefHeight="665.0" prefWidth="437.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <Label layoutX="135.0" layoutY="42.0" text="New Customer">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCustomerId" focusColor="#b2bec3" labelFloat="true" layoutX="72.0" layoutY="148.0" prefHeight="50.0" prefWidth="293.0" promptText="Customer Id" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustomerName" focusColor="#b2bec3" labelFloat="true" layoutX="72.0" layoutY="244.0" onKeyReleased="#textFields_Key_Released" prefHeight="42.0" prefWidth="293.0" promptText="Customer Name" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCustomerAddress" focusColor="#b2bec3" labelFloat="true" layoutX="72.0" layoutY="342.0" onKeyReleased="#textFields_Key_Released" prefHeight="42.0" prefWidth="293.0" promptText="Customer Address" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtContact" focusColor="#b2bec3" labelFloat="true" layoutX="72.0" layoutY="437.0" onKeyReleased="#textFields_Key_Released" prefHeight="42.0" prefWidth="293.0" promptText="Contact" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnUpdate" layoutX="137.0" layoutY="527.0" onAction="#btnSaveOnAction" prefHeight="60.0" prefWidth="163.0" styleClass="btn" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

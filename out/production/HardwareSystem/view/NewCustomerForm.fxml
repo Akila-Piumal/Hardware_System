@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" fx:id="dashBoardContext" prefHeight="504.0" prefWidth="388.0" stylesheets="@../assets/styles/NewCustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewCustomerFormController">
+   <children>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="148.0" layoutY="366.0" onAction="#btnSaveCustomerOnAction" styleClass="btn" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField fx:id="txtCustomerId" focusColor="WHITE" layoutX="61.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="267.0" promptText="Customer Id" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" layoutX="61.0" layoutY="128.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#textFields_Key_Released" prefHeight="46.0" prefWidth="267.0" promptText="Customer Name" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="WHITE" layoutX="61.0" layoutY="206.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#textFields_Key_Released" prefHeight="46.0" prefWidth="267.0" promptText="Customer Address" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContact" focusColor="WHITE" layoutX="61.0" layoutY="283.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#textFields_Key_Released" prefHeight="46.0" prefWidth="267.0" promptText="Contact" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

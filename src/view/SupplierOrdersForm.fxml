@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPaine" prefHeight="864.0" prefWidth="1921.0" style="-fx-background-color: #dfe6e9;" stylesheets="@../assets/styles/CustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierOrdersFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="64.0" layoutY="54.0" onAction="#btnHomeOnAction" style="-fx-background-color: FF5C00;" stylesheets="@../assets/styles/CustomerForm.css" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="166.0" layoutY="54.0" prefHeight="37.0" prefWidth="147.0" style="-fx-background-color: FF5C00;" text="Supplier-Orders" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="141.0" layoutY="57.0" prefHeight="31.0" prefWidth="15.0" text="&gt;">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="42.0" layoutY="110.0" prefHeight="665.0" prefWidth="1851.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <TableView fx:id="tblSupplierOrders" layoutX="97.0" layoutY="51.0" prefHeight="540.0" prefWidth="1670.0">
+               <columns>
+                  <TableColumn prefWidth="334.0" text="Order Id" />
+                  <TableColumn minWidth="8.0" prefWidth="334.0" text="Date" />
+                  <TableColumn minWidth="0.0" prefWidth="334.0" text="Time" />
+                  <TableColumn prefWidth="334.0" text="Supplier Id" />
+                  <TableColumn prefWidth="334.0" text="Cost" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

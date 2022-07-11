@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" prefHeight="864.0" prefWidth="1921.0" style="-fx-background-color: #dfe6e9;" stylesheets="@../assets/styles/CustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UsersFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="64.0" layoutY="38.0" onAction="#btnHomeOnAction" style="-fx-background-color: FF5C00;" stylesheets="@../assets/styles/CustomerForm.css" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="177.0" layoutY="38.0" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: FF5C00;" text="Users" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="154.0" layoutY="41.0" prefHeight="31.0" prefWidth="15.0" text="&gt;">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="50.0" layoutY="104.0" prefHeight="641.0" prefWidth="1284.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <TableView fx:id="tblUsers" layoutX="72.0" layoutY="95.0" prefHeight="483.0" prefWidth="1095.0">
+               <columns>
+                  <TableColumn prefWidth="172.99996948242188" text="User id" />
+                  <TableColumn minWidth="8.0" prefWidth="254.00003051757812" text="User Name" />
+                  <TableColumn minWidth="0.0" prefWidth="234.0" text="Password" />
+                  <TableColumn prefWidth="220.0" text="Role" />
+                  <TableColumn prefWidth="214.0" text="Details" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1411.0" layoutY="104.0" prefHeight="641.0" prefWidth="470.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="80.0" layoutY="88.0" onAction="#btnAddUserOnAction" prefHeight="71.0" prefWidth="295.0" styleClass="btnNewCustomer" text="Add User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="80.0" layoutY="258.0" onAction="#btnUpdateUserOnAction" prefHeight="68.0" prefWidth="295.0" styleClass="btnNewCustomer" text="Update User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="80.0" layoutY="427.0" onAction="#btnRemoveUserOnAction" prefHeight="53.0" prefWidth="310.0" styleClass="btnNewCustomer" text="Remove User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

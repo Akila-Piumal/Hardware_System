@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="665.0" prefWidth="1349.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnnuallyIncomeFormController">
+   <children>
+      <BarChart fx:id="incomeChart" layoutX="57.0" layoutY="52.0" prefHeight="552.0" prefWidth="1242.0" style="-fx-background-color: white;" stylesheets="@../assets/styles/CustomerForm.css" title="Years VS Income">
+         <xAxis>
+            <CategoryAxis label="Year" side="BOTTOM" fx:id="x" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="y" label="income" side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

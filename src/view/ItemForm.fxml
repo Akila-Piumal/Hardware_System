@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPaine" fx:id="dashBoardContext" prefHeight="864.0" prefWidth="1921.0" style="-fx-background-color: #dfe6e9;" stylesheets="@../assets/styles/CustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <AnchorPane layoutX="506.0" layoutY="116.0" prefHeight="665.0" prefWidth="1387.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <TableView fx:id="tblItem" layoutX="44.0" layoutY="48.0" prefHeight="527.0" prefWidth="1295.0">
+               <columns>
+                  <TableColumn prefWidth="124.0" text="Code" />
+                  <TableColumn minWidth="8.0" prefWidth="289.0" text="Description" />
+                  <TableColumn minWidth="0.0" prefWidth="177.0" text="Buying Price" />
+                  <TableColumn prefWidth="188.0" text="Selling Price" />
+                  <TableColumn prefWidth="162.0" text="Qty On Hand" />
+                  <TableColumn prefWidth="162.0" text="Status" />
+                  <TableColumn prefWidth="191.0" text="option" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="34.0" onAction="#btnHomeOnAction" style="-fx-background-color: FF5C00;" stylesheets="@../assets/styles/CustomerForm.css" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="34.0" prefHeight="37.0" prefWidth="95.0" style="-fx-background-color: FF5C00;" text="Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="121.0" layoutY="37.0" prefHeight="31.0" prefWidth="15.0" text="&gt;">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="29.0" layoutY="116.0" prefHeight="665.0" prefWidth="427.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <Label layoutX="144.0" layoutY="26.0" text="New Item">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtItemCode" focusColor="#b2bec3" labelFloat="true" layoutX="79.0" layoutY="97.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="293.0" promptText="Item Code" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtDescription" focusColor="#b2bec3" labelFloat="true" layoutX="79.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="293.0" promptText="Description" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtBuyingPrice" focusColor="#b2bec3" labelFloat="true" layoutX="79.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="293.0" promptText="Buying Price" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSellingPrice" focusColor="#b2bec3" labelFloat="true" layoutX="79.0" layoutY="333.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="293.0" promptText="Selling Price" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnSave" layoutX="132.0" layoutY="557.0" onAction="#btnSaveOnAction" prefHeight="60.0" prefWidth="163.0" styleClass="btn" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtQtyOnHand" focusColor="#b2bec3" labelFloat="true" layoutX="79.0" layoutY="406.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="293.0" promptText="Qty On Hand" styleClass="textField" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbStatus" focusColor="WHITE" layoutX="79.0" layoutY="482.0" onKeyReleased="#textFields_Key_Released" prefHeight="52.0" prefWidth="240.0" promptText="Status" styleClass="comboBox" unFocusColor="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="465.0" style="-fx-background-color: #dff9fb;" stylesheets="@../assets/styles/UserDetailsForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UsersDetailsFormController">
+   <children>
+      <JFXTextField fx:id="txtNic" alignment="CENTER" editable="false" focusColor="WHITE" labelFloat="true" layoutX="230.0" layoutY="68.0" prefHeight="41.0" prefWidth="195.0" styleClass="textField" unFocusColor="WHITE" />
+      <Label layoutX="80.0" layoutY="70.0" text="Nic" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="132.0" text="Name" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="194.0" text="Address" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="256.0" text="Contact" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="318.0" text="Salary" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" alignment="CENTER" editable="false" focusColor="WHITE" labelFloat="true" layoutX="230.0" layoutY="130.0" prefHeight="41.0" prefWidth="195.0" styleClass="textFieldOrderForm" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtAddress" alignment="CENTER" editable="false" focusColor="WHITE" labelFloat="true" layoutX="230.0" layoutY="192.0" prefHeight="41.0" prefWidth="195.0" styleClass="textFieldOrderForm" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtContact" alignment="CENTER" editable="false" focusColor="WHITE" labelFloat="true" layoutX="230.0" layoutY="254.0" prefHeight="41.0" prefWidth="195.0" styleClass="textFieldOrderForm" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtSalary" alignment="CENTER" editable="false" focusColor="WHITE" labelFloat="true" layoutX="230.0" layoutY="316.0" prefHeight="41.0" prefWidth="195.0" styleClass="textFieldOrderForm" unFocusColor="WHITE" />
+   </children>
+</AnchorPane>

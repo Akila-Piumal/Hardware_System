@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" prefHeight="864.0" prefWidth="1921.0" style="-fx-background-color: #dfe6e9;" stylesheets="@../assets/styles/CustomerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="42.0" onAction="#btnHomeOnAction" style="-fx-background-color: FF5C00;" stylesheets="@../assets/styles/CustomerForm.css" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="145.0" layoutY="42.0" prefHeight="37.0" prefWidth="95.0" style="-fx-background-color: FF5C00;" text="Income" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="121.0" layoutY="45.0" prefHeight="31.0" prefWidth="15.0" text="&gt;">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="chartContext" layoutX="523.0" layoutY="106.0" prefHeight="665.0" prefWidth="1349.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <BarChart id="chart" fx:id="incomeChart" layoutX="39.0" layoutY="41.0" prefHeight="517.0" prefWidth="1282.0" style="-fx-background-color: white;" title="Day VS Income">
+              <xAxis>
+                <CategoryAxis label="Date" side="BOTTOM" fx:id="x" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y" label="Income" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="60.0" layoutY="106.0" prefHeight="665.0" prefWidth="437.0" style="-fx-background-color: white;" styleClass="otherPane">
+         <children>
+            <JFXButton fx:id="btnDailyIncome" layoutX="107.0" layoutY="140.0" onAction="#dailyIncomeOnAction" prefHeight="60.0" prefWidth="224.0" styleClass="btn" text="Daily Income" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="84.0" layoutY="280.0" onAction="#monthlyIncomeOnAction" prefHeight="60.0" prefWidth="264.0" styleClass="btn" text="Monthly Income" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="84.0" layoutY="420.0" onAction="#annuallyIncomeOnAction" prefHeight="60.0" prefWidth="264.0" styleClass="btn" text="Annually Income" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

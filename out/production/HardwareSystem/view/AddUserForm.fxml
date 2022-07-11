@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" prefHeight="615.0" prefWidth="526.0" style="-fx-background-color: #dff9fb;" stylesheets="@../assets/styles/UserDetailsForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddUserFormController">
+   <children>
+      <JFXComboBox fx:id="cmbUserId" labelFloat="true" layoutX="243.0" layoutY="60.0" prefHeight="28.0" prefWidth="143.0" styleClass="comboBox" unFocusColor="WHITE" />
+      <Label layoutX="66.0" layoutY="68.0" text="User Id" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="243.0" layoutY="287.0" prefHeight="41.0" prefWidth="195.0" styleClass="textField" unFocusColor="WHITE" />
+      <Label layoutX="66.0" layoutY="151.0" text="Name" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="220.0" text="Role" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPassword" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="243.0" layoutY="352.0" prefHeight="41.0" prefWidth="195.0" styleClass="textField" unFocusColor="WHITE" />
+      <Label layoutX="66.0" layoutY="290.0" text="User Name" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="354.0" text="Password" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="166.0" layoutY="451.0" onAction="#btnAddUserOnAction" prefHeight="60.0" prefWidth="204.0" styleClass="btnAddUser" text="Add User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtName" alignment="CENTER" editable="false" layoutX="243.0" layoutY="154.0" styleClass="txtName" />
+      <JFXTextField fx:id="txtRole" alignment="CENTER" editable="false" layoutX="243.0" layoutY="220.0" styleClass="txtName" />
+   </children>
+</AnchorPane>

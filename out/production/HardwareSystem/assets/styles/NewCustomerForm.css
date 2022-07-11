@@ -1,0 +1,16 @@
+#mainPane{
+    -fx-background-color:  linear-gradient(to right, rgba(119, 8, 245, 0.29), rgba(15, 93, 255, 0.39));
+}
+.text-field{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #636e72;
+}
+
+.btn{
+    -fx-background-radius: 20px;
+    -fx-background-color: #00b894;
+}

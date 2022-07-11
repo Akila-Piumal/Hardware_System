@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" prefHeight="198.0" prefWidth="487.0" style="-fx-background-color: #dff9fb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateRentFormController">
+   <children>
+      <JFXTextField fx:id="txtAddDays" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="251.0" layoutY="40.0" onKeyReleased="#textFields_Key_Released" prefHeight="41.0" prefWidth="195.0" styleClass="textField" stylesheets="@../assets/styles/UserDetailsForm.css" unFocusColor="WHITE" />
+      <Label layoutX="38.0" layoutY="42.0" stylesheets="@../assets/styles/UserDetailsForm.css" text="Adding Days" textFill="#2c3a47">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="146.0" layoutY="115.0" onAction="#btnAddOnAction" prefHeight="52.0" prefWidth="195.0" styleClass="btnAddUser" stylesheets="@../assets/styles/UserDetailsForm.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

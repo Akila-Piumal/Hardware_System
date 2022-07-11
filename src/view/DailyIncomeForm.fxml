@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="665.0" prefWidth="1349.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DailyIncomeFormController">
+   <children>
+      <BarChart fx:id="incomeChart" layoutX="47.0" layoutY="42.0" prefHeight="517.0" prefWidth="1242.0" style="-fx-background-color: white;" stylesheets="@../assets/styles/CustomerForm.css" title="Days VS Income">
+         <xAxis>
+            <CategoryAxis label="Date" side="BOTTOM" fx:id="x" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="y" label="income" side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Label layoutX="798.0" layoutY="588.0" text="Today Income" textFill="#00b894">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTodayIncome" layoutX="1049.0" layoutY="588.0" textFill="#ea8685">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

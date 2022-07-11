@@ -1,0 +1,26 @@
+.text-field{
+    -fx-background-color: #30336b;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+}
+.combo-box{
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-border-color: #636e72;
+    -fx-border-radius: 10;
+}
+.btnAddUser{
+    -fx-background-color: #ea8685;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+.txtName{
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-text-fill: black;
+}
